@@ -1,6 +1,6 @@
 [app]
 
-title = 智能记账本
+title = \u667a\u80fd\u8bb0\u8d26\u672c
 package.name = account_book
 package.domain = org.snapbill
 
@@ -17,7 +17,7 @@ fullscreen = 0
 
 android.api = 34
 android.minapi = 21
-android.archs = arm64-v8a,armeabi-v7a
+android.archs = arm64-v8a
 
 [buildozer]
 
