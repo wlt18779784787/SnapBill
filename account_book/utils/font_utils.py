@@ -15,6 +15,7 @@ FONT_PATHS = [
     "assets/fonts/msyh.ttc",
     "assets/fonts/simhei.ttf",
     "assets/fonts/simsun.ttc",
+    "assets/fonts/NotoSansSC-Regular.otf",
     "assets/fonts/NotoSansSC-Regular.ttf",
 ]
 
