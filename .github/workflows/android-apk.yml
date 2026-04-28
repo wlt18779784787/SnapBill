@@ -38,6 +38,8 @@ jobs:
       - name: Build APK with Buildozer
         id: buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
+        env:
+          USER: root
         with:
           workdir: account_book
           buildozer_version: stable
