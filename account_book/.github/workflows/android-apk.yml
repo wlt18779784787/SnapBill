@@ -29,7 +29,11 @@ jobs:
         run: |
           mkdir -p account_book/assets/fonts
           FONT_PATH="$(fc-match -f '%{file}\n' 'Noto Sans CJK SC' | head -n 1)"
-          cp "$FONT_PATH" account_book/assets/fonts/NotoSansSC-Regular.otf
+          if [ -n "$FONT_PATH" ] && [ -f "$FONT_PATH" ]; then
+            cp "$FONT_PATH" account_book/assets/fonts/NotoSansSC-Regular.otf
+          else
+            echo "Chinese font not found on runner; continuing with repository assets."
+          fi
 
       - name: Build APK with Buildozer
         id: buildozer
@@ -37,17 +41,16 @@ jobs:
         with:
           workdir: account_book
           buildozer_version: stable
-          command: |
-            buildozer -v android debug
+          command: buildozer -v android debug
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: SnapBill-android-apk
-          path: account_book/bin/*.apk
+          path: ${{ steps.buildozer.outputs.filename }}
 
       - name: Publish GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: account_book/bin/*.apk
+          files: ${{ steps.buildozer.outputs.filename }}
