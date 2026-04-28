@@ -1,0 +1,85 @@
+{
+  "agents": [
+    {
+      "agent_id": "a090251f791b9700f",
+      "agent_type": "planner-agent",
+      "started_at": "2026-04-28T14:11:57.044Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-28T14:12:04.964Z",
+      "duration_ms": 7920
+    },
+    {
+      "agent_id": "ac8bd62aa6444be17",
+      "agent_type": "planner-agent",
+      "started_at": "2026-04-28T14:19:10.526Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-28T14:20:57.512Z",
+      "duration_ms": 106986
+    },
+    {
+      "agent_id": "a70ed807a3973785c",
+      "agent_type": "test-agent",
+      "started_at": "2026-04-28T14:19:10.561Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-28T14:19:50.468Z",
+      "duration_ms": 39907
+    },
+    {
+      "agent_id": "aa07b4ca9d1faa44c",
+      "agent_type": "ui-agent",
+      "started_at": "2026-04-28T14:19:10.594Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-28T14:21:21.227Z",
+      "duration_ms": 130633
+    },
+    {
+      "agent_id": "a5c5daa0586e13999",
+      "agent_type": "test-agent",
+      "started_at": "2026-04-28T14:19:50.771Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-28T14:20:00.317Z",
+      "duration_ms": 9546
+    },
+    {
+      "agent_id": "ac6de5f26547689a0",
+      "agent_type": "planner-agent",
+      "started_at": "2026-04-28T14:20:57.901Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-28T14:21:14.298Z",
+      "duration_ms": 16397
+    },
+    {
+      "agent_id": "a03ae008d834c6f78",
+      "agent_type": "ui-agent",
+      "started_at": "2026-04-28T14:21:21.614Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-28T14:21:46.883Z",
+      "duration_ms": 25269
+    },
+    {
+      "agent_id": "a3d3eb97d86238efa",
+      "agent_type": "planner-agent",
+      "started_at": "2026-04-28T14:21:38.045Z",
+      "parent_mode": "none",
+      "status": "running"
+    },
+    {
+      "agent_id": "a5fdf4bd0d2e2be45",
+      "agent_type": "test-agent",
+      "started_at": "2026-04-28T14:21:38.871Z",
+      "parent_mode": "none",
+      "status": "running"
+    }
+  ],
+  "total_spawned": 7,
+  "total_completed": 7,
+  "total_failed": 0,
+  "last_updated": "2026-04-28T14:21:46.996Z"
+}

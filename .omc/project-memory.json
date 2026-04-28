@@ -1,0 +1,187 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777387223598,
+  "projectRoot": "E:\\work\\workspace\\SnapBill",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "account_book": {
+      "path": "account_book",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1777387223567,
+      "keyFiles": [
+        "buildozer.spec",
+        "CLAUDE.md",
+        "main.py",
+        "README.md",
+        "requirements.txt"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 1,
+      "lastAccessed": 1777387223567,
+      "keyFiles": [
+        "mvp_plan.md"
+      ]
+    },
+    "account_book\\data": {
+      "path": "account_book\\data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1777387223568,
+      "keyFiles": [
+        "bills.db"
+      ]
+    },
+    "account_book\\services": {
+      "path": "account_book\\services",
+      "purpose": "Business logic services",
+      "fileCount": 4,
+      "lastAccessed": 1777387223568,
+      "keyFiles": [
+        "bill_service.py",
+        "llm_parser.py",
+        "ocr_service.py"
+      ]
+    },
+    "account_book\\tests": {
+      "path": "account_book\\tests",
+      "purpose": "Test files",
+      "fileCount": 3,
+      "lastAccessed": 1777387223569,
+      "keyFiles": [
+        "test_bill_service.py",
+        "test_llm_parser.py",
+        "__init__.py"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 2,
+      "lastAccessed": 1777387400396,
+      "type": "directory"
+    },
+    {
+      "path": "account_book\\README.md",
+      "accessCount": 1,
+      "lastAccessed": 1777387300741,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\main.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387408541,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\db\\sqlite_helper.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387408557,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\services\\ocr_service.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387408574,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\services\\llm_parser.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387408594,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\services\\bill_service.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387408627,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\requirements.txt",
+      "accessCount": 1,
+      "lastAccessed": 1777387425280,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\ui\\add_text_screen.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387425295,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\ui\\home_screen.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387425345,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\ui\\stats_screen.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387425360,
+      "type": "file"
+    },
+    {
+      "path": "account_book",
+      "accessCount": 1,
+      "lastAccessed": 1777387433440,
+      "type": "directory"
+    },
+    {
+      "path": "account_book\\utils\\ui_components.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387441107,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\ui\\add_image_screen.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387441124,
+      "type": "file"
+    },
+    {
+      "path": "account_book\\utils\\time_utils.py",
+      "accessCount": 1,
+      "lastAccessed": 1777387441175,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1777387518784,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

@@ -1,0 +1,15 @@
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:dispatching-parallel-agents"}
+{"t":0,"agent":"ac8bd62","agent_type":"planner-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a70ed80","agent_type":"test-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"aa07b4c","agent_type":"ui-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a70ed80","agent_type":"test-agent","event":"agent_stop","success":true,"duration_ms":39907}
+{"t":0,"agent":"a5c5daa","agent_type":"test-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a5c5daa","agent_type":"test-agent","event":"agent_stop","success":true,"duration_ms":9546}
+{"t":0,"agent":"ac8bd62","agent_type":"planner-agent","event":"agent_stop","success":true,"duration_ms":106986}
+{"t":0,"agent":"ac6de5f","agent_type":"planner-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"ac6de5f","agent_type":"planner-agent","event":"agent_stop","success":true,"duration_ms":16397}
+{"t":0,"agent":"aa07b4c","agent_type":"ui-agent","event":"agent_stop","success":true,"duration_ms":130633}
+{"t":0,"agent":"a03ae00","agent_type":"ui-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a3d3eb9","agent_type":"planner-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a5fdf4b","agent_type":"test-agent","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a03ae00","agent_type":"ui-agent","event":"agent_stop","success":true,"duration_ms":25269}

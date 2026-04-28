@@ -1,0 +1,7 @@
+{
+  "tool_name": "Agent",
+  "tool_input_preview": "{\"description\":\"验证应用启动\",\"prompt\":\"你是测试验证专家。验证修复后 python main.py 是否可以正常启动。\\n\\n工作目录：E:\\\\work\\\\workspace\\\\SnapBill\\\\account_book\\n\\n任务：\\n1. 等待 ui-agent 修复完成后\\n2. 执行 python main.py\\n3. 检查是否有导入错误\\n4. 检查 Ki...",
+  "error": "Team \"account-book-debug\" does not exist. Call spawnTeam first to create the team.",
+  "timestamp": "2026-04-28T14:19:10.559Z",
+  "retry_count": 1
+}
