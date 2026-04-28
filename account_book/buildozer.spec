@@ -1,6 +1,6 @@
 [app]
 
-title = \u667a\u80fd\u8bb0\u8d26\u672c
+title = SnapBill
 package.name = account_book
 package.domain = org.snapbill
 
