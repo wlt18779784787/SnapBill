@@ -1,0 +1,53 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install font packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fontconfig fonts-noto-cjk
+
+      - name: Copy Chinese font into project
+        run: |
+          mkdir -p account_book/assets/fonts
+          FONT_PATH="$(fc-match -f '%{file}\n' 'Noto Sans CJK SC' | head -n 1)"
+          cp "$FONT_PATH" account_book/assets/fonts/NotoSansSC-Regular.otf
+
+      - name: Build APK with Buildozer
+        id: buildozer
+        uses: ArtemSBulgakov/buildozer-action@v1
+        with:
+          workdir: account_book
+          buildozer_version: stable
+          command: |
+            buildozer -v android debug
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SnapBill-android-apk
+          path: account_book/bin/*.apk
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: account_book/bin/*.apk
